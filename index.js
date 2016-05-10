@@ -1,7 +1,7 @@
 var express = require('express');
 
 // Constants
-var PORT = 8888;
+var PORT = 80;
 
 // App
 var app = express();
