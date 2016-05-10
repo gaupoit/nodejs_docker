@@ -11,5 +11,5 @@ ADD . /src
 RUN cd /src; npm install
 
 EXPOSE  80
-CMD ["./node_modules/pm2/bin/pm2", "/src/index.js"]
+CMD ["npm start", "/src/index.js"]
 
