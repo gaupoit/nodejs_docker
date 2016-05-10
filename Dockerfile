@@ -4,7 +4,6 @@ FROM    ubuntu:latest
 RUN    apt-get -y update
 RUN    apt-get -y install nodejs
 RUN    apt-get -y install npm
-RUN    npm install -g -y pm2
 
 # Bundle app source
 ADD . /src
@@ -12,5 +11,5 @@ ADD . /src
 RUN cd /src; npm install
 
 EXPOSE  80
-CMD ["pm2", "/src/index.js"]
+CMD ["./node_modules/pm2/bin/pm2", "/src/index.js"]
 
