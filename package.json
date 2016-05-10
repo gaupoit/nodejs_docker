@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gaupoit/nodejs_docker/issues"
   },
-  "homepage": "https://github.com/gaupoit/nodejs_docker#readme"
+  "homepage": "https://github.com/gaupoit/nodejs_docker#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
