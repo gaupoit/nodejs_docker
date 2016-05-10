@@ -4,6 +4,7 @@ FROM    ubuntu:latest
 RUN    apt-get -y update
 RUN    apt-get -y install nodejs
 RUN    apt-get -y install npm
+RUN    apt-get -y install git
 
 RUN    npm install -g pm2
 RUN    ln -s /usr/bin/nodejs /usr/bin/node
@@ -13,6 +14,6 @@ ADD . /src
 RUN cd /src; npm install
 
 EXPOSE  80
-CMD cd /src;pm2 start index.js
+CMD node ./src/index.js
 
 
